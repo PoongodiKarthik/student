@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        div{
+            background-color: cyan;
+            border:2px solid blueviolet;
+            margin: 5px;
+            height: 400px;
+            width: 700px;
+            padding: 20px;
+            margin-left: 30%;
+            margin-top: 140px;
+
+        }
+        </style>
+
+</head>
+<body>
+    <script>
+       
+
+        function add()
+        {
+            var m1=parseInt(prompt("Enter M1 mark"))
+            var m2=parseInt(prompt("Enter M2 mark"))
+            var m3=parseInt(prompt("Enter M3 mark"))
+            var m4=parseInt(prompt("Enter M4 mark"))
+            var m5=parseInt(prompt("Enter M5 mark"))
+            var total=m1+m2+m3+m4+m5;
+            alert("The Total is=:"+total)
+
+            
+
+
+        }
+        function division()
+        {
+            var total=parseInt(prompt("Enter Total mark "))
+
+            var percen=(total/500)*100;
+            alert("The Percentage is:"+percen)
+
+            
+
+
+        }
+
+
+
+       
+    </script>
+    <div>
+        <h1 align="center">Student data</h1><br><br>
+    <input type="number" id="input1" name="num1" placeholder="Enter Student ID" value="">&nbsp&nbsp&nbsp;
+    <input type="text" id="input2" name="num2" placeholder="Enter Student Name" value="">&nbsp&nbsp&nbsp;
+    <input type="text" id="input3" name="num2" placeholder="Enter Address" value="">&nbsp&nbsp&nbsp;
+
+      <br><br><br><br>&nbsp&nbsp&nbsp &nbsp;
+        <button type="button" class="btn btn-success" onclick="add()">Total</button>&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp;
+        <button type="button" class="btn btn-primary" onclick="division()">Percentage</button>
+        
+        </div>
+   
+
+</body>
+</html>
